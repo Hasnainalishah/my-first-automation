@@ -1,0 +1,11 @@
+name: Mobile Cloud Robot
+on: [push, workflow_dispatch]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Welcome Message
+        run: |
+          echo "Congratulations! Mobile se cloud computer run ho gaya hai."
+          echo "Current Date and Time is: $(date)"
